@@ -8,7 +8,7 @@ Currently these snippets are to be downloaded and placed inside a folder on your
 
 1. Sublime Text > Preferences > Browse Packages
 2. Go inside `User` folder
-3. Click on the 'Download ZIP' button at the right to download a zip file of all the snippets. Extract the zip file and copy the extracted folder to the above `User` folder. You may want to rename the folder from `Genesis-master` to just `Genesis-master`.
+3. Click on the 'Download ZIP' button at the right to download a zip file of all the snippets. Extract the zip file and copy the extracted folder to the above `User` folder. You may want to rename the folder from `Genesis-master` to just `Genesis`.
 
 
 ## How to Use
