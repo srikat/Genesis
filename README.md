@@ -1,7 +1,7 @@
 # Genesis
 Sublime Text Snippets for Genesis WordPress Framework
 
-Currently these snippets are to be downloaded and placed inside a folder on your computer to use them. These can not be downloaded from Sublime Text's package manager (yet). If you are familiar with [submitting a Sublime Text package](https://packagecontrol.io/docs/submitting_a_package) and would like to help me do so, please get in touch with me.
+Currently these snippets are to be downloaded and placed inside a folder on your computer to use them. These can not be downloaded from Sublime Text's package manager (yet). If you are familiar with [submitting a Sublime Text package](https://packagecontrol.io/docs/submitting_a_package) and would like to help, please get in touch.
 
 
 ## How to Install
