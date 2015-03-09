@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+//* Add support for structural wraps
+add_theme_support( 'genesis-structural-wraps', array(
+	'header',
+	'nav',
+	'subnav',
+	'site-inner',
+	'footer-widgets',
+	'footer'
+) );
+]]></content>
+	<description>Add support for structural wraps in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

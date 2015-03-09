@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+${1:.myicon}:before {
+    content: "${2:\2605}";
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 20px/1 'dashicons';
+    vertical-align: top;
+}
+
+]]></content>
+	<description>Dashicons CSS</description>
+	<scope>source.css</scope>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+add_filter( 'genesis_search_text', '${2:prefix}_search_text' );
+/**
+ * Customizes the text of the search input
+ *
+ * @param  string \$text current text
+ * @return string modified text
+ */
+function ${2:prefix}_search_text( \$text ) {
+	return esc_attr( '${1:Search...}' );
+}
+]]></content>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Modify Search Input Placeholder Text in Genesis</description>
+</snippet>

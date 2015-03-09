@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+add_action( '${1:genesis_entry_header}', 'sk_image', ${2:9} );
+function sk_image() {
+	\$image_args = array(
+		'size' => '${3:custom-square-thumbnail}',
+		'attr' => array(
+			'class' => '${4:alignleft}',
+		)
+	);
+
+	// Get the featured image HTML
+	\$image = genesis_get_image( \$image_args );
+
+	echo '<a rel="bookmark" href="'. get_permalink() .'">'. \$image .'</a>';
+}
+]]></content>
+	<description>Example of using genesis_get_image with its arguments in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+/* replace the content value with the
+corresponding value from http://fontawesome.io/icons/ */
+
+${1:#text-2 h4.widget-title}:before {
+    content: "${2:\f087}";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+}
+
+${1:#text-2 h4.widget-title} {
+    padding-left: 1em;
+}
+
+]]></content>
+	<description>Font Awesome CSS</description>
+	<scope>source.css</scope>
+</snippet>

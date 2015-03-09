@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<?php
+
+//* Template Name: ${1:Foobar}
+
+$0
+
+genesis();
+
+]]></content>
+	<description>Custom Page Template in Genesis</description>
+	<scope>source.php, text.plain</scope>
+</snippet>

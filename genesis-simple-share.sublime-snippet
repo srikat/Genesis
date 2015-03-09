@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+if ( function_exists( 'genesis_share_icon_output' ) ) {
+    global \$Genesis_Simple_Share;
+    genesis_share_icon_output( 'work', \$Genesis_Simple_Share->icons );
+}
+/* the 'work' thing changes the name... so the div class will be "share-work" in this case */
+]]></content>
+	<description>Genesis Simple Share via function</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

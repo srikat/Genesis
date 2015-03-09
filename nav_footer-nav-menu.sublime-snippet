@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+//* Add support for footer menu
+add_theme_support( 'genesis-menus', array( 
+	'primary'   => __( 'Primary Navigation Menu', 'genesis' ),
+	'secondary' => __( 'Secondary Navigation Menu', 'genesis' ),
+	'footer'    => __( 'Footer Navigation Menu', 'genesis' ),
+) );
+
+//* Hook menu in footer
+add_action( 'genesis_footer', 'sk_footer_menu', 7 );
+function sk_footer_menu() {
+	printf( '<nav %s>', genesis_attr( 'nav-footer' ) );
+	wp_nav_menu( array(
+		'theme_location' => 'footer',
+		'container'      => false,
+		'depth'          => 1,
+		'fallback_cb'    => false,
+		'menu_class'     => 'genesis-nav-menu',	
+	) );
+	
+	echo '</nav>';
+}
+]]></content>
+	<description>Navigation Menu in Genesis Footer</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

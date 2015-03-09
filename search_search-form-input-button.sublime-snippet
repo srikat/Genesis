@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+add_filter( 'genesis_search_button_text', '${2:prefix}_search_button_text' );
+/**
+ * Returns the customized search button text
+ *
+ * @param  string \$text the current search text
+ * @return string the customized text
+ */
+function ${2:prefix}_search_button_text( \$text ) {
+	return esc_attr( '${1:Go}' );
+}
+]]></content>
+	<tabTrigger>customsearchbutton</tabTrigger>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Modify Search Button Text in Genesis</description>
+</snippet>

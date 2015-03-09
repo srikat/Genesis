@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+//* Reposition the secondary navigation menu
+remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+add_action( 'genesis_before_header', 'genesis_do_subnav' );
+]]></content>
+	<description>Reposition secondary navigation menu in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

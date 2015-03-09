@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+add_filter( 'genesis_seo_title', 'custom_genesis_seo_title', 10, 1 );
+/**
+ * Replace Site Title text entered in Settings > Reading with custom HTML.
+ * @author Sridhar Katakam
+ * @link http://sridharkatakam.com/replace-site-title-text-custom-html-genesis/
+ *
+ * @param string original title text
+ * @return string modified title HTML
+ */
+function custom_genesis_seo_title( \$title ) {
+	\$title = '<h1 itemprop="headline" class="site-title"><a title="${1:Homepage}" href="' . get_bloginfo( 'url' ) . '">${2:Custom <span style="color: #0f709e">HTML</span> here}</a></h1>';
+	return \$title;
+}
+]]></content>
+	<description>Replace Site Title text entered in Settings > Reading with custom HTML in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

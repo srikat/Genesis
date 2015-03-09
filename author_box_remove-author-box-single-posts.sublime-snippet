@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+//* Remove the author box on single posts
+remove_action( 'genesis_after_entry', 'genesis_do_author_box_single', 8 );
+]]></content>
+	<description>Remove the Author Box on single posts in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

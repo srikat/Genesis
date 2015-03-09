@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+//* Enqueue Google fonts
+add_action( 'wp_enqueue_scripts', 'sp_load_google_fonts' );
+function sp_load_google_fonts() {
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=${1:Lato:300,700|Open+Sans:400italic,700italic,400,700}', array(), CHILD_THEME_VERSION );
+}
+]]></content>
+	<description>Load Google Fonts in WordPress</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

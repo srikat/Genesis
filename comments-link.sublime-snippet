@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+?><a href="<?php comments_link(); ?>">
+    Comments to this post
+</a><?php
+]]></content>
+	<description>Display the URL to the current post's comments in WordPress</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

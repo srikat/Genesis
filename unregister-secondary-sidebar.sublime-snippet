@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+//* Unregister secondary sidebar
+unregister_sidebar( 'sidebar-alt' );
+]]></content>
+	<description>Unregister secondary sidebar in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

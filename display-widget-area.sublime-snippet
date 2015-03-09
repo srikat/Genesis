@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+genesis_widget_area( '${1:after-post}', array(
+	'before'	=> '<div class="${1:after-post} widget-area"><div class="wrap">',
+	'after'		=> '</div></div>',
+) );
+]]></content>
+	<description>Display a Widget Area in Genesis</description>
+	<tabTrigger>dwa</tabTrigger>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

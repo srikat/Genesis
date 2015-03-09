@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+//* Modify the author says text in comments
+add_filter( 'comment_author_says_text', 'sp_comment_author_says_text' );
+function sp_comment_author_says_text() {
+	return '${1:author says}';
+}
+]]></content>
+	<description>Modify the author says text in comments in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

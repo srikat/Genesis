@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
+add_action( 'genesis_entry_content', '${1:prefix}_do_post_content' );
+/**
+ * Outputs markup to genesis_entry_content hook
+ *
+ * @return void
+ */
+function ${1:prefix}_do_post_content() {
+	$2
+}
+]]></content>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Custom post content function in Genesis</description>
+</snippet>

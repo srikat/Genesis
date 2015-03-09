@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+//* Previous and Next Post navigation (typically goes in single-cpt.php)
+add_action('${1:genesis_after_entry}', 'sk_custom_post_nav');
+function sk_custom_post_nav() {
+	echo '<div class="prev-next-post-links">';
+		previous_post_link('<div class="previous-post-link">&laquo; %link</div>', '<strong>%title</strong>' );
+		next_post_link('<div class="next-post-link">%link &raquo;</div>', '<strong>%title</strong>' );
+	echo '</div>';
+}
+
+/* Sample CSS:
+
+.prev-next-post-links {
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.previous-post-link {
+	float: left;
+}
+
+.next-post-link {
+	float: right;
+}
+
+*/
+
+]]></content>
+	<description>Add post navigation (previous and next) for single entries of a CPT in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

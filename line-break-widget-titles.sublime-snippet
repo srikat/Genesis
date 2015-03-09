@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+//* Line breaks in widget titles using [br]
+add_filter( 'widget_title', 'sk_br_widget_title', 10, 3 );
+function sk_br_widget_title( \$title ) {
+	\$title = str_replace( "[br]", "<br/>", \$title );
+	return \$title;
+}
+]]></content>
+	<description>Line breaks in widget titles. [br] gets replaced by a line break</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

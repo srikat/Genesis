@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+//* Customize the author box title
+add_filter( 'genesis_author_box_title', 'custom_author_box_title' );
+function custom_author_box_title() {
+	return '<strong>About the Author</strong>';
+}
+]]></content>
+	<description>Customize the author box title in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

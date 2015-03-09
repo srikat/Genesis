@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+if ( \$image = genesis_get_image( 'format=url&size=${1:portfolio}' ) ) {
+	printf( '<div class="${1:portfolio}-image"><a href="%s" rel="bookmark"><img src="%s" alt="%s" /></a></div>', get_permalink(), \$image, the_title_attribute( 'echo=0' ) );
+}
+]]></content>
+	<description>Show/Display Featured image linking to permalink in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

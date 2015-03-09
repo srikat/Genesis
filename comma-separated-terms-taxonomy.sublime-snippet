@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+function sk_entry_terms() {
+	\$terms = get_the_terms( \$post->ID , '\${1:staff-position}' );
+	if ( ! empty( \$terms ) ) {
+		echo '<p class="entry-meta"><span class="entry-terms">';
+			foreach ( \$terms as \$term ) {
+				\$entry_terms .= \$term->name . ', ';
+			}
+			\$entry_terms = rtrim( \$entry_terms, ', ' );
+		echo \$entry_terms . '</span></p>';
+	}
+}
+]]></content>
+	<description>Comma separated terms for a specific taxonomy in WordPress</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+//* Modify the speak your mind title in comments
+add_filter( 'comment_form_defaults', 'sp_comment_form_defaults' );
+function sp_comment_form_defaults( \$defaults ) {
+ 
+	\$defaults['title_reply'] = __( '${1:Leave a Comment}' );
+	return \$defaults;
+ 
+}
+]]></content>
+	<description>Modify the speak your mind title in comments in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

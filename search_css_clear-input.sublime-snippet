@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/* To clear search input field's text when the search field gets focus */
+
+input[type="search"]:focus::-webkit-input-placeholder { color:transparent; }
+input[type="search"]:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input[type="search"]:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input[type="search"]:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+
+]]></content>
+	<description>Clear Search Input field's text when it gets focus</description>
+	<scope>source.css</scope>
+</snippet>

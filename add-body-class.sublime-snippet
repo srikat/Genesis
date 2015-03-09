@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+add_filter( 'body_class', '${1:prefix}_body_class' );
+/**
+ * Adds a css class to the body element
+ *
+ * @param  array \$classes the current body classes
+ * @return array \$classes modified classes
+ */
+function ${1:prefix}_body_class( \$classes ) {
+	\$classes[] = '${2:class-name}';
+	return \$classes;
+}
+]]></content>
+	<scope>source.php,source.php.embedded.block.html</scope>
+	<description>Add custom body class in WordPress</description>
+</snippet>

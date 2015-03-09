@@ -1,0 +1,52 @@
+<snippet>
+	<content><![CDATA[
+//* Register Home Featured Left and Home Featured Right widget areas
+genesis_register_sidebar( array(
+	'id'			=> '${1:home-featured-left}',
+	'name'			=> '${2:Home Featured Left}',
+	'description'	=> 'This is the ${2:Home Featured Left} section'
+) );
+genesis_register_sidebar( array(
+	'id'			=> '${3:home-featured-right}',
+	'name'			=> '${4:Home Featured Right}',
+	'description'	=> 'This is the ${4:Home Featured Right} section'
+) );
+
+//* Display Home Featured Left and Home Featured Right widget areas in one fourth - three fourth columns below Header on Frontpage
+add_action( '${5:genesis_after_header}', 'sk_home_featured' );
+function sk_home_featured() {
+
+	if ( ${6:is_front_page()} ) {
+		echo '<div class="${7:home-featured}"><div class="wrap">';
+
+		genesis_widget_area( '${1:home-featured-left}', array(
+			'before'	=> '<div class="${1:home-featured-left} widget-area one-third first">',
+			'after'		=> '</div>',
+		) );
+
+		genesis_widget_area( '${3:home-featured-right}', array(
+			'before'	=> '<div class="${3:home-featured-right} widget-area two-thirds">',
+			'after'		=> '</div>',
+		) );
+
+		echo '</div></div>';
+	}
+
+}
+/* Sample CSS:
+
+.home-featured {
+	margin-top: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+
+	.${1:home-featured-left} {
+		margin-bottom: 40px;
+	}
+
+} */
+]]></content>
+	<description>2-Column 75% | 25% widget areas</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

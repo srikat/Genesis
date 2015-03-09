@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+\$img = genesis_get_image() ? genesis_get_image( array( 'size' => '${1:related}' ) ) : '<img src="' . get_stylesheet_directory_uri() . '/images/${2:related.png}" alt="' . get_the_title() . '" />'
+]]></content>
+	<description>Show/Display Featured image if present, otherwise show a default image in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

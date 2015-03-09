@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+//* Register ${1:after post} widget area
+genesis_register_sidebar( array(
+	'id'            => '${2:after-post}',
+	'name'          => __( '${3:After Post}', 'themename' ),
+	'description'   => __( 'This is the ${1:after post} widget area', 'themename' ),
+) );
+]]></content>
+	<description>Register a Widget Area in Genesis</description>
+	<tabTrigger>rwa</tabTrigger>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+//* Remove comment form allowed tags
+add_filter( 'comment_form_defaults', 'sp_remove_comment_form_allowed_tags' );
+function sp_remove_comment_form_allowed_tags( \$defaults ) {
+	\$defaults['comment_notes_after'] = '';
+	return \$defaults;
+}
+]]></content>
+	<description>Remove the allowed tags text above the comment form in WordPress</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

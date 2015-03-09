@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+// Remove "Home" text and markup from breadcrumbs
+add_filter ( 'genesis_home_crumb', '${1:youruniqueprefix}_breadcrumb_home_link' ); // Genesis >= 1.5
+function ${1:youruniqueprefix}_breadcrumb_home_link( \$crumb ) {
+     \$crumb = '';
+     return \$crumb;
+}
+]]></content>
+	<description>Remove "Home" from Breadcrumbs in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

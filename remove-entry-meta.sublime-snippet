@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+//* Remove entry meta from entry footer
+remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
+]]></content>
+	<description>Remove entry meta from entry footer in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

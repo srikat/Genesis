@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+//* Customize the previous page link
+add_filter ( 'genesis_prev_link_text' , 'sp_previous_page_link' );
+function sp_previous_page_link ( \$text ) {
+	return ${1:g_ent( '&laquo; ' ) . __( 'Previous Page', CHILD_DOMAIN )};
+}
+
+//* Customize the next page link
+add_filter ( 'genesis_next_link_text' , 'sp_next_page_link' );
+function sp_next_page_link ( \$text ) {
+	return ${2:__( 'Next Page', CHILD_DOMAIN ) . g_ent( ' &raquo; ' )};
+}
+]]></content>
+	<description>Modify Previous Page and Next Page text in Content Archives Post Navigation in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+add_action( 'init', 'sk_add_category_${1:events}' );
+function sk_add_category_${1:events}() {
+	register_taxonomy_for_object_type( 'category', '${2:e4gf_events}' );
+}
+]]></content>
+	<description>Add Category support to a CPT in WordPress</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

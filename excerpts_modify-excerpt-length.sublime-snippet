@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+//* Modify the length of post excerpts
+add_filter( 'excerpt_length', 'sp_excerpt_length' );
+function sp_excerpt_length( $length ) {
+	return ${1:50}; // pull first ${1:50} words
+}
+]]></content>
+	<description>Modify excerpts length in WordPress</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+//* Unregister secondary navigation menu
+add_theme_support( 'genesis-menus', array( 'primary' => __( 'Primary Navigation Menu', 'genesis' ) ) );
+]]></content>
+	<description>Unregister secondary navigation menu in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

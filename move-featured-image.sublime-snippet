@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+//* Remove Featured Image from Entry Content and add it in Entry Header above the Post Title
+remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
+add_action( 'genesis_entry_header', 'genesis_do_post_image', 9 );
+]]></content>
+	<description>Move Featured image to the left of Post title in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

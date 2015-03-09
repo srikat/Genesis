@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[
+//* Remove the default header
+remove_action( 'genesis_header', 'genesis_do_header' );
+
+//* Add custom header
+add_action( 'genesis_header', 'sk_do_header' );
+function sk_do_header() {
+
+	echo '<a href="'. get_bloginfo( 'url' ) .'"><img src="${1:http://placehold.it/1200x200}" alt="Home" /></a>';
+
+}
+/* Add this CSS
+
+.site-header {
+	padding: 0;
+}
+
+.site-header .wrap {
+	text-align: center;
+}
+
+.site-header img {
+	vertical-align: top;
+}
+
+*/
+]]></content>
+	<description>Wide Header in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

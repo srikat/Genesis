@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+//* Customize the submit button text in comments
+add_filter( 'comment_form_defaults', 'sp_comment_submit_button' );
+function sp_comment_submit_button( \$defaults ) { 
+    $defaults['label_submit'] = __( '${1:Submit}', 'custom' );
+    return \$defaults; 
+}
+]]></content>
+	<description>Modify the submit button text in comments in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

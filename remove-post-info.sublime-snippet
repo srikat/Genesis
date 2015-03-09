@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+//* Remove post info
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+]]></content>
+	<description>Remove post info in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

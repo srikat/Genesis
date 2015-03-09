@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+//* Add support for ${1:3}-column footer widget areas
+add_theme_support( 'genesis-footer-widgets', ${1:3} );
+]]></content>
+	<description>Enable (add theme support for) Footer Widget Areas in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

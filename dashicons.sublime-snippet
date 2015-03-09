@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+//* Enqueue Dashicons
+add_action( 'wp_enqueue_scripts', 'enqueue_dashicons' );
+function enqueue_dashicons() {
+	wp_enqueue_style( 'dashicons' );
+}
+]]></content>
+	<description>Load Dashicons</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

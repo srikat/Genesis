@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+// Remove Site Header on ${1:Posts page and Front page}
+add_action( 'genesis_before_header', 'sk_remove_header_homepage' );
+function sk_remove_header_homepage() {
+	if ( ${2:is_home() || is_front_page()} ) {
+		remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
+		remove_action( 'genesis_header', 'genesis_do_header' );
+		remove_action( 'genesis_header', 'genesis_header_markup_close', 15 );
+	}
+}
+]]></content>
+	<description>Remove Header conditionally in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

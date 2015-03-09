@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+//* Customize entry meta in the entry footer
+// http://my.studiopress.com/docs/shortcode-reference/#post-shortcodes
+add_filter( 'genesis_post_meta', 'sp_post_meta_filter' );
+function sp_post_meta_filter( \$post_meta ) {
+	\$post_meta = '$1[post_categories before="Filed Under: "] [post_tags before="Tagged: "]';
+	return \$post_meta;
+}
+]]></content>
+	<description>Modify entry meta in the entry footer in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

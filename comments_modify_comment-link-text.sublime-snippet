@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+//* Modify the comment link text in comments
+add_filter( 'genesis_post_info', 'sp_post_info_filter' );
+function sp_post_info_filter( \$post_info ) {
+	return '[post_comments zero="${1:Leave a Comment}" one="${2:1 Comment}" more="${3:% Comments}"]';
+}
+]]></content>
+	<description>Modify the comment link text in comments in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

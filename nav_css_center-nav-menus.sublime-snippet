@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+/* Center Primary and Secondary Navigation */
+ 
+.nav-primary,
+.nav-secondary {
+	text-align: center;
+}
+
+]]></content>
+	<description>Center Nav Menus in Genesis</description>
+	<scope>source.css</scope>
+</snippet>

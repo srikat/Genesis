@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+//* Reposition the footer widgets
+remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
+add_action( 'genesis_after', 'genesis_footer_widget_areas' );
+
+//* Reposition the footer
+remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
+add_action( 'genesis_after', 'genesis_footer_markup_open', 11 );
+add_action( 'genesis_after', 'genesis_do_footer', 12 );
+add_action( 'genesis_after', 'genesis_footer_markup_close', 13 );
+]]></content>
+	<description>Move Footer widgets and Footer outside Site Container in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

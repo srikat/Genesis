@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+//* Modify comments title text in comments
+add_filter( 'genesis_title_comments', 'sp_genesis_title_comments' );
+function sp_genesis_title_comments() {
+	\$title = '\${1:<h3>Discussion</h3>}';
+	return \$title;
+}
+]]></content>
+	<description>Modify comments title text in comments in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

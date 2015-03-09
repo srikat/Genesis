@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+//* Change the footer text
+// http://my.studiopress.com/docs/shortcode-reference/#footer-shortcodes
+add_filter( 'genesis_footer_creds_text', 'sp_footer_creds_filter' );
+function sp_footer_creds_filter( \$creds ) {
+	\$creds = '$1[footer_copyright] &middot; <a href="http://mydomain.com">My Custom Link</a> &middot; Built on the <a href="http://www.studiopress.com/themes/genesis" title="Genesis Framework">Genesis Framework</a>';
+	return \$creds;
+}
+]]></content>
+	<description>Customize Footer in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+//* Remove the entry title (requires HTML5 theme support)
+remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+]]></content>
+	<description>Remove entry/post title in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

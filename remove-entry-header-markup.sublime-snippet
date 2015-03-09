@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+//* Remove entry header markup
+remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
+remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
+]]></content>
+	<description>Remove entry header markup in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>
