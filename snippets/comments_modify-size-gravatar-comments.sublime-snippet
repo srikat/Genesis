@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-//* Modify the size of the Gravatar in comments
-add_filter( 'genesis_comment_list_args', 'sp_comments_gravatar' );
-function sp_comments_gravatar( \$args ) {
+// Modify the size of the Gravatar in comments
+add_filter( 'genesis_comment_list_args', '${2:sp_comments_gravatar}' );
+function ${2:sp_comments_gravatar}( \$args ) {
 	\$args['avatar_size'] = ${1:96};
 	return \$args;
 }

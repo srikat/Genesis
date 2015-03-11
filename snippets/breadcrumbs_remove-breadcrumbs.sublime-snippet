@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Remove breadcrumbs
+// Remove breadcrumbs
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 ]]></content>
 	<description>Remove breadcrumbs in Genesis</description>

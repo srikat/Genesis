@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-//* Customize the entire footer
+// Customize the entire footer
 remove_action( 'genesis_footer', 'genesis_do_footer' );
-add_action( 'genesis_footer', 'sp_custom_footer' );
-function sp_custom_footer() {
+add_action( 'genesis_footer', '${2:sp_custom_footer}' );
+function ${2:sp_custom_footer}() {
 	?>
 	${1:<p>&copy; Copyright 2015 <a href="http://mydomain.com/">My Domain</a> &middot; All Rights Reserved &middot; Powered by <a href="http://wordpress.org/">WordPress</a> &middot; <a href="http://mydomain.com/wp-admin">Admin</a></p>}
 	<?php

@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-//* Enqueue ${1:Headroom}
-add_action( 'wp_enqueue_scripts', 'sk_enqueue_scripts' );
-function sk_enqueue_scripts() {
+// Enqueue ${1:Headroom}
+add_action( 'wp_enqueue_scripts', '${6:sk_enqueue_scripts}' );
+function ${6:sk_enqueue_scripts}() {
 	wp_enqueue_script( '${2:jquery-headroom}', get_stylesheet_directory_uri() . '/js/${3:jQuery.headroom.min.js}', array( 'jquery' ), '', true );
 
 	wp_enqueue_script( '${4:headroom-init}', get_stylesheet_directory_uri() . '/js/${5:headroom-init.js}', array( '${2:jquery-headroom}' ), '1.0.0', true );

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Unregister secondary sidebar
+// Unregister secondary sidebar
 unregister_sidebar( 'sidebar-alt' );
 ]]></content>
 	<description>Unregister secondary sidebar in Genesis</description>

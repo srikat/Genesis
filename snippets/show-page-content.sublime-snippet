@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Show Page's content
+// Show Page's content
 add_action( 'genesis_loop', 'genesis_standard_loop', 5 );
 ]]></content>
 	<description>Show page content in Genesis</description>

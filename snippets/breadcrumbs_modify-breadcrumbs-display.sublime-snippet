@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-//* Modify breadcrumb arguments.
-add_filter( 'genesis_breadcrumb_args', 'sp_breadcrumb_args' );
-function sp_breadcrumb_args( $args ) {
+// Modify breadcrumb arguments.
+add_filter( 'genesis_breadcrumb_args', '${1:sp_breadcrumb_args}' );
+function ${1:sp_breadcrumb_args}( $args ) {
 	$args['home'] = 'Home';
 	$args['sep'] = ' / ';
 	$args['list_sep'] = ', '; // Genesis 1.5 and later

@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-//* Customize entry meta in the entry header
-add_filter( 'genesis_post_info', 'sp_post_info_filter' );
-function sp_post_info_filter( \$post_info ) {
+// Customize entry meta in the entry header
+add_filter( 'genesis_post_info', '${2:sp_post_info_filter}' );
+function ${2:sp_post_info_filter}( \$post_info ) {
 	\$post_info = '$1[post_date] by [post_author_posts_link] [post_comments] [post_edit]';
 	return \$post_info;
 }

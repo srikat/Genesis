@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-//* Remove comment form allowed tags
-add_filter( 'comment_form_defaults', 'sp_remove_comment_form_allowed_tags' );
-function sp_remove_comment_form_allowed_tags( \$defaults ) {
+// Remove comment form allowed tags
+add_filter( 'comment_form_defaults', '${1:sp_remove_comment_form_allowed_tags}' );
+function ${1:sp_remove_comment_form_allowed_tags}( \$defaults ) {
 	\$defaults['comment_notes_after'] = '';
 	return \$defaults;
 }

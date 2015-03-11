@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Remove Archive Pagination
+// Remove Archive Pagination
 remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
 ]]></content>
 	<description>Remove Archive Pagination in Genesis</description>

@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-//* Modify the author says text in comments
-add_filter( 'comment_author_says_text', 'sp_comment_author_says_text' );
-function sp_comment_author_says_text() {
+// Modify the author says text in comments
+add_filter( 'comment_author_says_text', '${2:sp_comment_author_says_text}' );
+function ${2:sp_comment_author_says_text}() {
 	return '${1:author says}';
 }
 ]]></content>

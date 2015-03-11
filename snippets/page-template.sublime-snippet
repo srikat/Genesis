@@ -2,7 +2,7 @@
 	<content><![CDATA[
 <?php
 
-//* Template Name: ${1:Foobar}
+// Template Name: ${1:Foobar}
 
 $0
 

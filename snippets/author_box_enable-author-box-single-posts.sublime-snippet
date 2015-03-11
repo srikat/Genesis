@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Display author box on single posts
+// Display author box on single posts
 add_filter( 'get_the_author_genesis_author_box_single', '__return_true' );
 ]]></content>
 	<description>Enable/Display Author Box on single posts in Genesis</description>

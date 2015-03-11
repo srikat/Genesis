@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Force sidebar-sidebar-content layout setting
+// Force sidebar-sidebar-content layout setting
 add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_sidebar_sidebar_content' );
 ]]></content>
 	<scope>source.php,source.php.embedded.block.html</scope>

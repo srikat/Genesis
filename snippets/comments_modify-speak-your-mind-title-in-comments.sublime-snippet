@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-//* Modify the speak your mind title in comments
-add_filter( 'comment_form_defaults', 'sp_comment_form_defaults' );
-function sp_comment_form_defaults( \$defaults ) {
+// Modify the speak your mind title in comments
+add_filter( 'comment_form_defaults', '${2:sp_comment_form_defaults}' );
+function ${2:sp_comment_form_defaults}( \$defaults ) {
  
 	\$defaults['title_reply'] = __( '${1:Leave a Comment}' );
 	return \$defaults;

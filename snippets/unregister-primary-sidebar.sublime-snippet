@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Unregister primary sidebar
+// Unregister primary sidebar
 unregister_sidebar( 'sidebar' );
 ]]></content>
 	<description>Unregister primary sidebar in Genesis</description>

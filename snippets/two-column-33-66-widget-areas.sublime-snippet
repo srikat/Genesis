@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Register Home Featured Left and Home Featured Right widget areas
+// Register Home Featured Left and Home Featured Right widget areas
 genesis_register_sidebar( array(
 	'id'			=> '${1:home-featured-left}',
 	'name'			=> '${2:Home Featured Left}',
@@ -12,12 +12,12 @@ genesis_register_sidebar( array(
 	'description'	=> 'This is the ${4:Home Featured Right} section'
 ) );
 
-//* Display Home Featured Left and Home Featured Right widget areas in one fourth - three fourth columns below Header on Frontpage
-add_action( '${5:genesis_after_header}', 'sk_home_featured' );
-function sk_home_featured() {
+// Display Home Featured Left and Home Featured Right widget areas in one third - two thrid columns below Header on Frontpage
+add_action( '${5:genesis_after_header}', '${6:sk_home_featured}' );
+function ${6:sk_home_featured}() {
 
-	if ( ${6:is_front_page()} ) {
-		echo '<div class="${7:home-featured}"><div class="wrap">';
+	if ( ${7:is_front_page()} ) {
+		echo '<div class="${8:home-featured}"><div class="wrap">';
 
 		genesis_widget_area( '${1:home-featured-left}', array(
 			'before'	=> '<div class="${1:home-featured-left} widget-area one-third first">',
@@ -47,6 +47,6 @@ function sk_home_featured() {
 
 } */
 ]]></content>
-	<description>2-Column 75% | 25% widget areas</description>
+	<description>2-Column 33.333333333% (one-third) | 66.666666667% (two-thirds) widget areas</description>
 	<scope>source.php.embedded.block.html</scope>
 </snippet>

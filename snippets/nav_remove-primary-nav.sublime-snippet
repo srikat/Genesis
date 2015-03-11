@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Remove the primary navigation menu
+// Remove the primary navigation menu
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 ]]></content>
 	<description>Remove primary navigation menu in Genesis</description>

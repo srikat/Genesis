@@ -1,0 +1,75 @@
+<snippet>
+	<content><![CDATA[
+// Register Home Featured Left, Middle 1, Middle 2, and Right widget areas
+genesis_register_sidebar( array(
+	'id'			=> 'home-featured-left',
+	'name'			=> 'Home Featured Left',
+	'description'	=> 'This is the Home Featured Left section'
+) );
+genesis_register_sidebar( array(
+	'id'			=> 'home-featured-middle-1',
+	'name'			=> 'Home Featured Middle 1',
+	'description'	=> 'This is the Home Featured Middle section'
+) );
+genesis_register_sidebar( array(
+	'id'			=> 'home-featured-middle-2',
+	'name'			=> 'Home Featured Middle 2',
+	'description'	=> 'This is the Home Featured Right section'
+) );
+genesis_register_sidebar( array(
+	'id'			=> 'home-featured-right',
+	'name'			=> 'Home Featured Right',
+	'description'	=> 'This is the Home Featured Right section'
+) );
+
+// Display Home Featured Left, Middle 1, Middle 2 and Right widget areas in one fourth columns below Header on Frontpage
+add_action( 'genesis_after_header', 'sk_home_featured' );
+function sk_home_featured() {
+
+	if ( is_front_page() ) {
+		echo '<div class="home-featured"><div class="wrap">';
+
+		genesis_widget_area( 'home-featured-left', array(
+			'before'	=> '<div class="home-featured-left widget-area one-fourth first">',
+			'after'		=> '</div>',
+		) );
+
+		genesis_widget_area( 'home-featured-middle-1', array(
+			'before'	=> '<div class="home-featured-middle-1 widget-area one-fourth">',
+			'after'		=> '</div>',
+		) );
+
+		genesis_widget_area( 'home-featured-middle-2', array(
+			'before'	=> '<div class="home-featured-middle-2 widget-area one-fourth">',
+			'after'		=> '</div>',
+		) );
+
+		genesis_widget_area( 'home-featured-right', array(
+			'before'	=> '<div class="home-featured-right widget-area one-fourth">',
+			'after'		=> '</div>',
+		) );
+
+		echo '</div></div>';
+	}
+
+}
+/* Sample CSS:
+
+.home-featured {
+	margin-top: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+
+	.home-featured .widget-area {
+		margin-bottom: 40px;
+	}
+	.home-featured .widget-area:last-child {
+		margin-bottom: 0;
+	}
+
+} */
+]]></content>
+	<description>4-Column 25% (one-fourth) | 25% (one-fourth) | 25% (one-fourth) | 25% (one-fourth) widget areas</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>

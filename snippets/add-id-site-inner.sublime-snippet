@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-//* Add an ID to .site-inner
-add_filter( 'genesis_attr_site-inner', 'custom_attributes_content' );
-function custom_attributes_content( \$attributes ) {
+// Add an ID to .site-inner
+add_filter( 'genesis_attr_site-inner', '${2:custom_attributes_content}' );
+function ${2:custom_attributes_content}( \$attributes ) {
 
 	\$attributes['id'] = '${1:site-inner}';
 	return \$attributes;

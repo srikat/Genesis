@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Add post navigation
+// Add post navigation
 add_action( 'genesis_after_loop', 'genesis_prev_next_post_nav' );
 ]]></content>
 	<description>Add post navigation (previous/next) for single Posts in Genesis</description>

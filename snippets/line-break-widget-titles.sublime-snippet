@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-//* Line breaks in widget titles using [br]
-add_filter( 'widget_title', 'sk_br_widget_title', 10, 3 );
-function sk_br_widget_title( \$title ) {
+// Line breaks in widget titles using [br]
+add_filter( 'widget_title', '${1:sk_br_widget_title}', 10, 3 );
+function ${1:sk_br_widget_title}( \$title ) {
 	\$title = str_replace( "[br]", "<br/>", \$title );
 	return \$title;
 }

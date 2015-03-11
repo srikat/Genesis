@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-//* Register a custom image size for ${1:Portfolio} images
-add_image_size( '${2:portfolio}', ${3:346}, ${4:231}, true );
+// Register a custom image size for ${1:Portfolio} images
+add_image_size( '${2:portfolio}', ${3:346}, ${4:231}, ${5:true} );
 ]]></content>
 	<description>Register custom image size in WordPress</description>
 	<scope>source.php, text.plain</scope>

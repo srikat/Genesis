@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Remove the header right widget area
+// Remove the header right widget area
 unregister_sidebar( 'header-right' );
 ]]></content>
 	<description>Remove Header Right widget area in Genesis</description>

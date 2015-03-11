@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-//* Modify comments title text in comments
-add_filter( 'genesis_title_comments', 'sp_genesis_title_comments' );
-function sp_genesis_title_comments() {
+// Modify comments title text in comments
+add_filter( 'genesis_title_comments', '${2:sp_genesis_title_comments}' );
+function ${2:sp_genesis_title_comments}() {
 	\$title = '\${1:<h3>Discussion</h3>}';
 	return \$title;
 }

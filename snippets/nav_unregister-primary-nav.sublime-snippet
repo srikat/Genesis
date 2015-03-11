@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Unregister primary navigation menu
+// Unregister primary navigation menu
 add_theme_support( 'genesis-menus', array( 'secondary' => __( 'Secondary Navigation Menu', 'genesis' ) ) );
 ]]></content>
 	<description>Unregister primary navigation menu in Genesis</description>

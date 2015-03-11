@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-//* Reposition Archive Pagination
-//* Moves .archive-pagination from under main.content to adjacent to it.
+// Reposition Archive Pagination
+// Moves .archive-pagination from under main.content to adjacent to it.
 remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
 add_action( 'genesis_after_content', 'genesis_posts_nav' );
 ]]></content>

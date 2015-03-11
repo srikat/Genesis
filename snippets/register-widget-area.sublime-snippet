@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
-//* Register ${1:after post} widget area
+// Register ${3:after post} widget area
 genesis_register_sidebar( array(
-	'id'            => '${2:after-post}',
-	'name'          => __( '${3:After Post}', 'themename' ),
-	'description'   => __( 'This is the ${1:after post} widget area', 'themename' ),
+	'id'            => '${1:after-post}',
+	'name'          => __( '${2:After Post}', '${4:themename}' ),
+	'description'   => __( 'This is the ${3:after post} widget area', '${4:themename}' ),
 ) );
 ]]></content>
 	<description>Register a Widget Area in Genesis</description>

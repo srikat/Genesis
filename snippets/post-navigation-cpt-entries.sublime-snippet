@@ -1,26 +1,26 @@
 <snippet>
 	<content><![CDATA[
-//* Previous and Next Post navigation (typically goes in single-cpt.php)
-add_action('${1:genesis_after_entry}', 'sk_custom_post_nav');
-function sk_custom_post_nav() {
-	echo '<div class="prev-next-post-links">';
-		previous_post_link('<div class="previous-post-link">&laquo; %link</div>', '<strong>%title</strong>' );
-		next_post_link('<div class="next-post-link">%link &raquo;</div>', '<strong>%title</strong>' );
+// Previous and Next Post navigation (typically goes in single-cpt.php)
+add_action('${1:genesis_after_entry}', '${2:sk_custom_post_nav}');
+function ${2:sk_custom_post_nav}() {
+	echo '<div class="${3:prev-next-post-links}">';
+		previous_post_link('<div class="${4:previous-post-link}">&laquo; %link</div>', '<strong>%title</strong>' );
+		next_post_link('<div class="${5:next-post-link}">%link &raquo;</div>', '<strong>%title</strong>' );
 	echo '</div>';
 }
 
 /* Sample CSS:
 
-.prev-next-post-links {
+.${3:prev-next-post-links} {
 	overflow: hidden;
 	margin-bottom: 40px;
 }
 
-.previous-post-link {
+.${4:previous-post-link} {
 	float: left;
 }
 
-.next-post-link {
+.${5:next-post-link} {
 	float: right;
 }
 

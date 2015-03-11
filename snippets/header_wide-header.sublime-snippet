@@ -1,11 +1,11 @@
 <snippet>
 	<content><![CDATA[
-//* Remove the default header
+// Remove the default header
 remove_action( 'genesis_header', 'genesis_do_header' );
 
-//* Add custom header
-add_action( 'genesis_header', 'sk_do_header' );
-function sk_do_header() {
+// Add custom header
+add_action( 'genesis_header', '${2:sk_do_header}' );
+function ${2:sk_do_header}() {
 
 	echo '<a href="'. get_bloginfo( 'url' ) .'"><img src="${1:http://placehold.it/1200x200}" alt="Home" /></a>';
 

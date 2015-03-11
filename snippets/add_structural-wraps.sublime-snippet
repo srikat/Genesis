@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-//* Add support for structural wraps
+// Add support for structural wraps
 add_theme_support( 'genesis-structural-wraps', array(
 	'header',
 	'nav',

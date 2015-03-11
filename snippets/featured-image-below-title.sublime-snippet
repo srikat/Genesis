@@ -1,14 +1,14 @@
 <snippet>
 	<content><![CDATA[
-//* Register new image size for Featured Image on single Posts
-add_image_size( 'single-thumbnail', 680, 200, true );
+// Register new image size for Featured Image on single Posts
+add_image_size( '${1:single-thumbnail}', ${2:680}, ${3:200}, true );
 
-//* Display featured image above content on single Posts
-add_action ( 'genesis_entry_content', 'sk_show_featured_image_single', 9 );
-function sk_show_featured_image_single() {
+// Display featured image above content on single Posts
+add_action ( 'genesis_entry_content', '${4:sk_show_featured_image_single}', 9 );
+function ${4:sk_show_featured_image_single}() {
 	if ( is_singular( 'post' ) && has_post_thumbnail() ) {
 		echo '<div class="single-thumbnail">';
-			genesis_image( array( 'size' => 'single-thumbnail' ) );
+			genesis_image( array( 'size' => '${1:single-thumbnail}' ) );
 		echo '</div>';
 	}
 }
