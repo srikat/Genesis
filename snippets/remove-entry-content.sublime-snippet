@@ -3,6 +3,6 @@
 // Remove the post content (requires HTML5 theme support)
 remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
 ]]></content>
-	<description>Remove entry content in Genesis</description>
+	<description>Remove entry content (post content) in Genesis</description>
 	<scope>source.php.embedded.block.html</scope>
 </snippet>

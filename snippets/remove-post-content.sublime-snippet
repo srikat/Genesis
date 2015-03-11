@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-// Remove post content
-remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
-]]></content>
-	<description>Remove post content in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
-</snippet>
