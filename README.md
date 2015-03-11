@@ -19,6 +19,10 @@ When you find the match (or after you have pressed the up/down arrow key to sele
 
 Note that most of the snippets work only in PHP files.
 
+### Overview video and blog post
+
+[https://sridharkatakam.com/sublime-text-snippets-for-genesis/]
+
 ### Credit goes to
 
 [StudioPress](http://my.studiopress.com/snippets/), [Gary Jones](https://github.com/GaryJones/sublime/tree/master/snippets), [Justin Tallant](http://justintallant.com/genesis-sublime-text-2-snippets/) and [Bill Erickson](http://www.billerickson.net/code/).
