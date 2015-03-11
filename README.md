@@ -21,7 +21,7 @@ Note that most of the snippets work only in PHP files.
 
 ### Overview video and blog post
 
-[https://sridharkatakam.com/sublime-text-snippets-for-genesis/]
+https://sridharkatakam.com/sublime-text-snippets-for-genesis/
 
 ### Credit goes to
 
