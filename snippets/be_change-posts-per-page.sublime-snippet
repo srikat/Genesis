@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+add_action( 'pre_get_posts', '${3:be_change_event_posts_per_page}' );
+/**
+ * Change Posts Per Page for ${4:Event Archive}
+ * 
+ * @author Bill Erickson
+ * @link http://www.billerickson.net/customize-the-wordpress-query/
+ * @param object \$query data
+ *
+ */
+function ${3:be_change_event_posts_per_page}( \$query ) {
+	
+	if( \$query->is_main_query() && !is_admin() && ${1:is_post_type_archive( 'event' )} ) {
+		\$query->set( 'posts_per_page', '${2:18}' );
+	}
+
+}
+]]></content>
+	<description>Change Posts Per Page using pre_get_posts in WordPress</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>
