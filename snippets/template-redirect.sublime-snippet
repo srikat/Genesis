@@ -5,11 +5,11 @@
  * Use ${1:archive-portfolio}.php for ${2:portfolio category and tag taxonomy archives}.
  */
 add_filter( 'template_include', 'sk_template_redirect' );
-function sk_template_redirect( $template ) {
+function sk_template_redirect( \$template ) {
 
 	if ( ${3:is_tax( 'portfolio_category' ) || is_tax( 'portfolio_tag' )} )
-		$template = get_query_template( '${1:archive-portfolio}' );
-	return $template;
+		\$template = get_query_template( '${1:archive-portfolio}' );
+	return \$template;
 
 }
 ]]></content>
