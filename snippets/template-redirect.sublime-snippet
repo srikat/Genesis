@@ -2,15 +2,19 @@
 	<content><![CDATA[
 /**
  * Template Redirect
- * Use ${1:archive-portfolio}.php for ${2:portfolio category and tag taxonomy archives}.
+ * Use ${1:template_category-grid.php} for ${2:recipes category archive}.
  */
-add_filter( 'template_include', 'sk_template_redirect' );
-function sk_template_redirect( \$template ) {
+add_filter( 'template_include', '${3:custom_category_template}', 99 );
+function ${3:custom_category_template}( \$template ) {
 
-	if ( ${3:is_tax( 'portfolio_category' ) || is_tax( 'portfolio_tag' )} )
-		\$template = get_query_template( '${1:archive-portfolio}' );
+	if ( ${4:is_category( 'recipes' )} ) {
+		\$new_template = locate_template( array( '${1:template_category-grid.php}' ) );
+		if ( '' != \$new_template ) {
+			return \$new_template ;
+		}
+	}
+
 	return \$template;
-
 }
 ]]></content>
 	<description>Template Redirect in WordPress</description>
