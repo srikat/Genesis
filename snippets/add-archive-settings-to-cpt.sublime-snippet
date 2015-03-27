@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-// Add Archive Settings option to ${1:Portolio} CPT
+// Add Archive Settings support to ${1:Portolio} CPT
 add_post_type_support( '${2:portfolio}', 'genesis-cpt-archives-settings' );
 ]]></content>
-	<description>Add Archive Settings option to a CPT in Genesis</description>
+	<description>Add Archive Settings support to a CPT in Genesis</description>
 	<scope>source.php.embedded.block.html</scope>
 </snippet>
