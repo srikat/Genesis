@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+// Modify the size of the Gravatar in the author box
+add_filter( 'genesis_author_box_gravatar_size', 'author_box_gravatar_size' );
+function author_box_gravatar_size( \$size ) {
+	return '${1:80}';
+}
+]]></content>
+	<description>Modify the size of the Gravatar in the author box in Genesis</description>
+	<scope>source.php.embedded.block.html</scope>
+</snippet>
