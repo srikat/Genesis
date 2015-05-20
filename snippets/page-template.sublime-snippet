@@ -10,5 +10,4 @@ genesis();
 
 ]]></content>
 	<description>Custom Page Template in Genesis</description>
-	<scope>source.php, text.plain</scope>
 </snippet>
