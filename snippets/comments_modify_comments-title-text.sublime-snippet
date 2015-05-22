@@ -3,7 +3,7 @@
 // Modify comments title text in comments
 add_filter( 'genesis_title_comments', '${2:sp_genesis_title_comments}' );
 function ${2:sp_genesis_title_comments}() {
-	\$title = '\${1:<h3>Discussion</h3>}';
+	\$title = '${1:<h3>Discussion</h3>}';
 	return \$title;
 }
 ]]></content>
