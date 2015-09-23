@@ -1,11 +1,13 @@
 <snippet>
 	<content><![CDATA[
-// Register ${3:after post} widget area
-genesis_register_sidebar( array(
-	'id'            => '${1:after-post}',
-	'name'          => __( '${2:After Post}', '${4:themename}' ),
-	'description'   => __( 'This is the ${3:after post} widget area', '${4:themename}' ),
-) );
+// Register ${1:my-sidebar} widget area
+genesis_register_widget_area(
+	array(
+		'id'          => '${1:my-sidebar}',
+		'name'        => __( '${2:My Sidebar}', '${4:my-theme-text-domain}' ),
+		'description' => __( '${3:A description of the intended purpose or location}', '${4:my-theme-text-domain}' ),
+	)
+);
 ]]></content>
 	<description>Register a Widget Area in Genesis</description>
 	<tabTrigger>rwa</tabTrigger>
