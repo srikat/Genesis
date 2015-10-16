@@ -17,22 +17,22 @@
 ************************************/
 add_filter( 'genesis_seo_title', '${4:custom_header_inline_logo}', 10, 3 );
 function ${4:custom_header_inline_logo}( \$title, \$inside, \$wrap ) {
- 
-	\$logo = '<img src="' . get_stylesheet_directory_uri() . '/images/${1:logo.png}" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" width="${2:200}" height="${3:100}" />';
- 
-	\$inside = sprintf( '<a href="%s" title="%s">%s</a>', trailingslashit( home_url() ), esc_attr( get_bloginfo( 'name' ) ), \$logo );
- 
-	// Determine which wrapping tags to use - changed is_home to is_front_page to fix Genesis bug
-	\$wrap = is_front_page() && 'title' === genesis_get_seo_option( 'home_h1_on' ) ? 'h1' : 'p';
- 
-	// A little fallback, in case an SEO plugin is active - changed is_home to is_front_page to fix Genesis bug
-	\$wrap = is_front_page() && ! genesis_get_seo_option( 'home_h1_on' ) ? 'h1' : \$wrap;
- 
+
+	\$logo = '<img src="' . get_stylesheet_directory_uri() . '/images/${1:logo.png}" alt="' . esc_attr( get_bloginfo( 'name' ) ) . ' Homepage" title="' . esc_attr( get_bloginfo( 'name' ) ) . ' Homepage" width="${2:200}" height="${3:100}" />';
+
+	\$inside = sprintf( '<a href="%s">%s<span class="screen-reader-text">%s</span></a>', trailingslashit( home_url() ), \$logo, get_bloginfo( 'name' ) );
+
+	// Determine which wrapping tags to use
+	\$wrap = genesis_is_root_page() && 'title' === genesis_get_seo_option( 'home_h1_on' ) ? 'h1' : 'p';
+
+	// A little fallback, in case an SEO plugin is active
+	\$wrap = genesis_is_root_page() && ! genesis_get_seo_option( 'home_h1_on' ) ? 'h1' : \$wrap;
+
 	// And finally, \$wrap in h1 if HTML5 & semantic headings enabled
 	\$wrap = genesis_html5() && genesis_get_seo_option( 'semantic_headings' ) ? 'h1' : \$wrap;
- 
+
 	return sprintf( '<%1\$s %2\$s>%3\$s</%1\$s>', \$wrap, genesis_attr( 'site-title' ), \$inside );
- 
+
 }
 ]]></content>
 	<description>Better Responsive Inline Logo in Genesis</description>
