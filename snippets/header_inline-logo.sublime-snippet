@@ -4,10 +4,6 @@
  *
  * Replace Header Site Title with Inline Logo
  *
- * Fixes Genesis bug - when using static front page and blog page (admin reading settings) Home page is <p> tag and Blog page is <h1> tag
- *
- * Replaces "is_home" with "is_front_page" to correctly display Home page wit <h1> tag and Blog page with <p> tag
- *
  * @author AlphaBlossom / Tony Eppright
  * @link http://www.alphablossom.com/a-better-wordpress-genesis-responsive-logo-header/
  *
