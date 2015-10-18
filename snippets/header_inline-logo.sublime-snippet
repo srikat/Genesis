@@ -12,13 +12,13 @@
  * @link http://www.alphablossom.com/a-better-wordpress-genesis-responsive-logo-header/
  *
  * @edited by Sridhar Katakam
- * @link http://www.sridharkatakam.com/use-inline-logo-instead-background-image-genesis/
+ * @link https://sridharkatakam.com/use-inline-logo-instead-background-image-genesis/
  *
 ************************************/
 add_filter( 'genesis_seo_title', '${4:custom_header_inline_logo}', 10, 3 );
 function ${4:custom_header_inline_logo}( \$title, \$inside, \$wrap ) {
 
-	\$logo = '<img src="' . get_stylesheet_directory_uri() . '/images/${1:logo.png}" alt="' . esc_attr( get_bloginfo( 'name' ) ) . ' Homepage" title="' . esc_attr( get_bloginfo( 'name' ) ) . ' Homepage" width="${2:200}" height="${3:100}" />';
+	\$logo = '<img src="' . get_stylesheet_directory_uri() . '/images/${1:logo.png}" alt="' . esc_attr( get_bloginfo( 'name' ) ) . ' Homepage" width="${2:200}" height="${3:100}" />';
 
 	\$inside = sprintf( '<a href="%s">%s<span class="screen-reader-text">%s</span></a>', trailingslashit( home_url() ), \$logo, get_bloginfo( 'name' ) );
 
