@@ -20,7 +20,7 @@ function ${1:sp_breadcrumb_args}( $args ) {
 	$args['labels']['tax'] = 'Archives for ';
 	$args['labels']['post_type'] = 'Archives for ';
 	$args['labels']['404'] = 'Not found: '; // Genesis 1.5 and later
-return $args;
+	return \$args;
 }
 ]]></content>
 	<description>Modify breadcrumb arguments in Genesis</description>
