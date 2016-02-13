@@ -8,5 +8,5 @@ function ${1:sp_remove_comment_form_allowed_tags}( \$defaults ) {
 }
 ]]></content>
 	<description>Remove the allowed tags text above the comment form in WordPress</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

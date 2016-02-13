@@ -14,5 +14,5 @@ function ${4:sk_show_featured_image_single}() {
 }
 ]]></content>
 	<description>Show/Display Featured image below title on Posts in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

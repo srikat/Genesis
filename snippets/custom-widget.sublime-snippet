@@ -46,10 +46,10 @@ class ${1:Foo_Widget} extends WP_Widget {
 		\$title = ! empty( \$instance['title'] ) ? \$instance['title'] : __( '${5:New title}', 'text_domain' );
 		?>
 		<p>
-		<label for="<?php echo \$this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+		<label for="<?php echo \$this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
 		<input class="widefat" id="<?php echo \$this->get_field_id( 'title' ); ?>" name="<?php echo \$this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( \$title ); ?>">
 		</p>
-		<?php 
+		<?php
 	}
 
 	/**
@@ -78,5 +78,5 @@ function register_${2:foo_widget}() {
 add_action( 'widgets_init', 'register_${2:foo_widget}' );
 ]]></content>
 	<description>Sample code for creating a Custom Widget in WordPress</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

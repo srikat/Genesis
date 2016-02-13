@@ -31,5 +31,5 @@ function theme_menu_extras( \$menu, \$args ) {
 }
 ]]></content>
 	<description>Add Nav Extras in WordPress</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 // Add support for footer menu
-add_theme_support( 'genesis-menus', array( 
+add_theme_support( 'genesis-menus', array(
 	'primary'   => __( 'Primary Navigation Menu', 'genesis' ),
 	'secondary' => __( 'Secondary Navigation Menu', 'genesis' ),
 	'footer'    => __( 'Footer Navigation Menu', 'genesis' ),
@@ -16,12 +16,12 @@ function sk_footer_menu() {
 		'container'      => false,
 		'depth'          => 1,
 		'fallback_cb'    => false,
-		'menu_class'     => 'genesis-nav-menu',	
+		'menu_class'     => 'genesis-nav-menu',
 	) );
-	
+
 	echo '</nav>';
 }
 ]]></content>
 	<description>Navigation Menu in Genesis Footer</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

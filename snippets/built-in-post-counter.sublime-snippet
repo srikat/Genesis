@@ -2,20 +2,20 @@
 	<content><![CDATA[
 /**
  * Use the built-in post counter
- * 
+ *
  * Sometimes you'll want to keep track of which post you're on in a loop.
  * Some people create their own \$loop_counter (ex: Genesis, https://gist.github.com/4675237 ).
  * There's a better way! A loop counter is built into \$wp_query. Ex:
- * 
+ *
  * global \$wp_query;
  * echo \$wp_query->current_post
- * 
+ *
  * Count starts at 0 (first post is 0, second post is 1 )
  */
- 
+
 /**
  * Display ad after third post
- * 
+ *
  * @author Bill Erickson
  * @link http://www.billerickson.net/code/use-the-built-in-post-counter/
  */
@@ -27,5 +27,5 @@ function be_ad_after_third_post() {
 add_action( 'genesis_after_entry', 'be_ad_after_third_post' );
 ]]></content>
 	<description>Built-in WordPress post counter example in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

@@ -13,5 +13,5 @@ function sk_entry_terms() {
 }
 ]]></content>
 	<description>Comma separated terms for a specific taxonomy in WordPress</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

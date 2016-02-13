@@ -4,5 +4,5 @@
 add_action( 'genesis_after_loop', 'genesis_prev_next_post_nav' );
 ]]></content>
 	<description>Add post navigation (previous/next) for single Posts in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

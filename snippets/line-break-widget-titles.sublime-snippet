@@ -8,5 +8,5 @@ function ${1:sk_br_widget_title}( \$title ) {
 }
 ]]></content>
 	<description>Line breaks in widget titles. [br] gets replaced by a line break</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

@@ -12,6 +12,6 @@ function ${1:prefix}_body_class( \$classes ) {
 	return \$classes;
 }
 ]]></content>
-	<scope>source.php,source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 	<description>Add custom body class in WordPress</description>
 </snippet>

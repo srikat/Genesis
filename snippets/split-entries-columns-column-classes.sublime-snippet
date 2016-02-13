@@ -21,5 +21,5 @@ function ${2:be_portfolio_post_class}( \$classes ) {
 add_filter( 'post_class', '${2:be_portfolio_post_class}' );
 ]]></content>
 	<description>Split entries in grid columns using Column Classes in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

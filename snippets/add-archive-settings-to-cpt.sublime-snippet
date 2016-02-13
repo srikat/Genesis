@@ -4,5 +4,5 @@
 add_post_type_support( '${2:portfolio}', 'genesis-cpt-archives-settings' );
 ]]></content>
 	<description>Add Archive Settings support to a CPT in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

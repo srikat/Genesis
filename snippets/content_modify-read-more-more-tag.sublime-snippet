@@ -7,5 +7,5 @@ function ${2:sp_read_more_link}() {
 }
 ]]></content>
 	<description>Modify read more link when using More Tag in WordPress</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

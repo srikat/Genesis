@@ -3,6 +3,6 @@
 // Force full width content
 add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 ]]></content>
-	<scope>source.php,source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 	<description>Force full width content layout setting in Genesis</description>
 </snippet>

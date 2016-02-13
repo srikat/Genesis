@@ -18,5 +18,5 @@ function abte_add_site_description_class( \$attributes ) {
 }
 ]]></content>
 	<description>Remove site description (tagline)</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

@@ -7,5 +7,5 @@ function ${2}() {
 ]]></content>
 	<description>Add action callback</description>
 	<tabTrigger>act</tabTrigger>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

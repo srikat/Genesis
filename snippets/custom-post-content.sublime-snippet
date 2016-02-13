@@ -11,6 +11,6 @@ function ${1:prefix}_do_post_content() {
 	$2
 }
 ]]></content>
-	<scope>source.php,source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 	<description>Custom post content function in Genesis</description>
 </snippet>

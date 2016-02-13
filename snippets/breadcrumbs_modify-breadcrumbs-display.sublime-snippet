@@ -24,5 +24,5 @@ function ${1:sp_breadcrumb_args}( $args ) {
 }
 ]]></content>
 	<description>Modify breadcrumb arguments in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

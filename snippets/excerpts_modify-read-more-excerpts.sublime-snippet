@@ -7,5 +7,5 @@ function ${2:new_excerpt_more}( \$more ) {
 }
 ]]></content>
 	<description>Modify read more for Excerpts in WordPress</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

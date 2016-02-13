@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
 \$logo = '<img src="' . get_stylesheet_directory_uri() . '/images/${1:logo.png}" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '">';
- 
+
 printf( '<a href="%s" title="%s">%s</a>', trailingslashit( home_url() ), esc_attr( get_bloginfo( 'name' ) ), \$logo );
 ]]></content>
 	<description>Logo linking to home URL in WordPress</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

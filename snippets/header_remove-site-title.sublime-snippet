@@ -4,5 +4,5 @@
 remove_action( 'genesis_site_title', 'genesis_seo_site_title' );
 ]]></content>
 	<description>Remove the site title in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

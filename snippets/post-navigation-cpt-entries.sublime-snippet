@@ -28,5 +28,5 @@ function ${2:sk_custom_post_nav}() {
 
 ]]></content>
 	<description>Add post navigation (previous and next) for single entries of a CPT in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

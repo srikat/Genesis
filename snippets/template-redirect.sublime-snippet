@@ -18,5 +18,5 @@ function ${3:custom_category_template}( \$template ) {
 }
 ]]></content>
 	<description>Template Redirect in WordPress</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

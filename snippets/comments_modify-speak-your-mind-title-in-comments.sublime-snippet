@@ -3,12 +3,12 @@
 // Modify the speak your mind title in comments
 add_filter( 'comment_form_defaults', '${2:sp_comment_form_defaults}' );
 function ${2:sp_comment_form_defaults}( \$defaults ) {
- 
+
 	\$defaults['title_reply'] = __( '${1:Leave a Comment}' );
 	return \$defaults;
- 
+
 }
 ]]></content>
 	<description>Modify the speak your mind title in comments in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

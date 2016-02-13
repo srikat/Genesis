@@ -18,5 +18,5 @@ add_filter( 'genesis_single_crumb', 'be_add_blog_crumb', 10, 2 );
 add_filter( 'genesis_archive_crumb', 'be_add_blog_crumb', 10, 2 );
 ]]></content>
 	<description>Add "Blog" to Breadcrumbs in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

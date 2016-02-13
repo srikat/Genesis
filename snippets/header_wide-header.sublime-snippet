@@ -27,5 +27,5 @@ function ${2:sk_do_header}() {
 */
 ]]></content>
 	<description>Wide Header in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

@@ -7,5 +7,5 @@ function author_box_gravatar_size( \$size ) {
 }
 ]]></content>
 	<description>Modify the size of the Gravatar in the author box in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

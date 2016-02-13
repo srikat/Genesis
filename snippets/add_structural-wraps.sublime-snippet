@@ -11,5 +11,5 @@ add_theme_support( 'genesis-structural-wraps', array(
 ) );
 ]]></content>
 	<description>Add support for structural wraps in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

@@ -7,5 +7,5 @@ function ${1:enqueue_dashicons}() {
 }
 ]]></content>
 	<description>Load Dashicons</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

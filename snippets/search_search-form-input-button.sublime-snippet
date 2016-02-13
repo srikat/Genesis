@@ -12,6 +12,6 @@ function ${2:prefix}_search_button_text( \$text ) {
 }
 ]]></content>
 	<tabTrigger>customsearchbutton</tabTrigger>
-	<scope>source.php,source.php.embedded.block.html</scope>
+	<scope>source.php,source.php</scope>
 	<description>Modify Search Button Text in Genesis</description>
 </snippet>

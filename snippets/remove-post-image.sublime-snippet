@@ -4,5 +4,5 @@
 remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
 ]]></content>
 	<description>Remove post image (Featured image coming from theme settings) in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

@@ -7,5 +7,5 @@ function ${2:sp_load_google_fonts}() {
 }
 ]]></content>
 	<description>Load Google Fonts in WordPress</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

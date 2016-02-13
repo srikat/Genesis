@@ -7,5 +7,5 @@ function ${2:sp_comment_author_says_text}() {
 }
 ]]></content>
 	<description>Modify the author says text in comments in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

@@ -2,22 +2,22 @@
 	<content><![CDATA[
 // Unregister content/sidebar layout setting
 genesis_unregister_layout( 'content-sidebar' );
- 
+
 // Unregister sidebar/content layout setting
 genesis_unregister_layout( 'sidebar-content' );
- 
+
 // Unregister content/sidebar/sidebar layout setting
 genesis_unregister_layout( 'content-sidebar-sidebar' );
- 
+
 // Unregister sidebar/sidebar/content layout setting
 genesis_unregister_layout( 'sidebar-sidebar-content' );
- 
+
 // Unregister sidebar/content/sidebar layout setting
 genesis_unregister_layout( 'sidebar-content-sidebar' );
- 
+
 // Unregister full-width content layout setting
 genesis_unregister_layout( 'full-width-content' );
 ]]></content>
-	<scope>source.php,source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 	<description>Unregister layouts in Genesis</description>
 </snippet>

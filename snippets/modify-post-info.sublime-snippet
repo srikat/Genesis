@@ -8,5 +8,5 @@ function ${2:sp_post_info_filter}( \$post_info ) {
 }
 ]]></content>
 	<description>Modify post info in the entry header in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

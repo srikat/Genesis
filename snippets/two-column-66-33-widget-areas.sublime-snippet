@@ -48,5 +48,5 @@ function ${6:sk_home_featured}() {
 } */
 ]]></content>
 	<description>2-Column 66.666666667% (two-thirds) | 33.333333333% (one-third) widget areas</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

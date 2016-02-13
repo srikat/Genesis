@@ -17,5 +17,5 @@ function be_remove_genesis_page_templates( \$page_templates ) {
 add_filter( 'theme_page_templates', 'be_remove_genesis_page_templates' );
 ]]></content>
 	<description>Remove Archive and Blog Page templates in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

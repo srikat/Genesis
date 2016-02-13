@@ -8,5 +8,5 @@ function ${2:sp_genesis_title_comments}() {
 }
 ]]></content>
 	<description>Modify comments title text in comments in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

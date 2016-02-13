@@ -9,5 +9,5 @@ function ${6:sk_enqueue_scripts}() {
 }
 ]]></content>
 	<description>Enqueue Scripts in WordPress</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

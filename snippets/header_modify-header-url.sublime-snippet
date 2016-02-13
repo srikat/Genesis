@@ -7,6 +7,6 @@ function child_header_title( \$title, \$inside, \$wrap ) {
     return sprintf( '<%1\$s class="site-title">%2\$s</%1\$s>', \$wrap, \$inside );
 }
 ]]></content>
-	<scope>source.php,source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 	<description>Modify the header URL in Genesis</description>
 </snippet>

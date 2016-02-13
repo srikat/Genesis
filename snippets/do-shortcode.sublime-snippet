@@ -3,5 +3,5 @@
 echo do_shortcode('[${1:your_shortcode}]');
 ]]></content>
 	<description>Do/Display Shortcode in WordPress</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

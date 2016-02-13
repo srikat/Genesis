@@ -7,5 +7,5 @@ genesis_widget_area( '${1:after-post}', array(
 ]]></content>
 	<description>Display a Widget Area in Genesis</description>
 	<tabTrigger>dwa</tabTrigger>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

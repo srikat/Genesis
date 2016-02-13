@@ -3,6 +3,6 @@
 // Force content-sidebar layout setting
 add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_content_sidebar' );
 ]]></content>
-	<scope>source.php,source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 	<description>Force content-sidebar layout setting in Genesis</description>
 </snippet>

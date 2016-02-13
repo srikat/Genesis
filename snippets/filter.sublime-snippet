@@ -10,5 +10,5 @@ function ${2}( ${7:\$value} ) {
 ]]></content>
 	<description>Add filter callback</description>
 	<tabTrigger>fil</tabTrigger>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

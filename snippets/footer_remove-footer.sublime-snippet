@@ -7,6 +7,6 @@ remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
 // Remove the footer closing markup
 remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
 ]]></content>
-	<scope>source.php,source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 	<description>Remove footer incl. the markup in Genesis</description>
 </snippet>

@@ -15,5 +15,5 @@ function custom_genesis_seo_title( \$title ) {
 }
 ]]></content>
 	<description>Replace Site Title text entered in Settings > Reading with custom HTML in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

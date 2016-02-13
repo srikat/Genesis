@@ -32,5 +32,5 @@ function ${4:custom_header_inline_logo}( \$title, \$inside, \$wrap ) {
 }
 ]]></content>
 	<description>Better Responsive Inline Logo in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

@@ -9,5 +9,5 @@ function ${2:sp_post_meta_filter}( \$post_meta ) {
 }
 ]]></content>
 	<description>Modify entry meta in the entry footer in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

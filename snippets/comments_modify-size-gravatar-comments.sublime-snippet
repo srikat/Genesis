@@ -8,5 +8,5 @@ function ${2:sp_comments_gravatar}( \$args ) {
 }
 ]]></content>
 	<description>Modify the size of the Gravatar in comments in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

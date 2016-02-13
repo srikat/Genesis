@@ -13,5 +13,5 @@ function ${4:sp_next_page_link} ( \$text ) {
 }
 ]]></content>
 	<description>Modify Previous Page and Next Page text in Content Archives Post Navigation in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

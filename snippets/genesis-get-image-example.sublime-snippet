@@ -16,5 +16,5 @@ function sk_image() {
 }
 ]]></content>
 	<description>Example of using genesis_get_image with its arguments in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

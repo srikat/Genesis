@@ -10,5 +10,5 @@ function ${2:custom_attributes_content}( \$attributes ) {
 }
 ]]></content>
 	<description>Add an ID to .site-inner in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

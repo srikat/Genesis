@@ -13,5 +13,5 @@ add_action( 'genesis_after', 'genesis_do_footer', 12 );
 add_action( 'genesis_after', 'genesis_footer_markup_close', 13 );
 ]]></content>
 	<description>Move Footer widgets and Footer outside Site Container in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

@@ -7,5 +7,5 @@ function ${2:sp_excerpt_length}( \$length ) {
 }
 ]]></content>
 	<description>Modify excerpts length in WordPress</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

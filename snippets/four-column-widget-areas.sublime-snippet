@@ -71,5 +71,5 @@ function sk_home_featured() {
 } */
 ]]></content>
 	<description>4-Column 25% (one-fourth) | 25% (one-fourth) | 25% (one-fourth) | 25% (one-fourth) widget areas</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

@@ -9,5 +9,5 @@ function ${2:sp_footer_creds_filter}( \$creds ) {
 }
 ]]></content>
 	<description>Customize Footer in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

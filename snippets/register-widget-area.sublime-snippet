@@ -11,5 +11,5 @@ genesis_register_widget_area(
 ]]></content>
 	<description>Register a Widget Area in Genesis</description>
 	<tabTrigger>rwa</tabTrigger>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>

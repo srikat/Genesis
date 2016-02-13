@@ -10,5 +10,5 @@ function ${2:sp_custom_footer}() {
 }
 ]]></content>
 	<description>Customize the entire footer text using hook in Genesis</description>
-	<scope>source.php.embedded.block.html</scope>
+	<scope>source.php</scope>
 </snippet>
