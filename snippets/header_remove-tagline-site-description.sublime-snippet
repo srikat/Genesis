@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+// Add class for screen readers to site description
+add_filter( 'genesis_attr_site-description', 'genesis_attributes_screen_reader_class' );
+]]></content>
+	<description>Remove Tagline (Site Description) in Genesis</description>
+	<scope>source.php</scope>
+</snippet>
